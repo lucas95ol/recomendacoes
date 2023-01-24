@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+    <script tipe="module" src="funcoes.js"></script>
+    <script tipe="module" src="musicas.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="titulo-pag">MÚSICAS</h1>
+        </div>
+        <aside>
+            <button onclick="navegar('index.html')">
+            <img src="images/home.svg" class="img1">
+            </button>
+            <button onclick="navegar('conselhos.html')">
+            <img src="images/mensagem.svg" class="img4">
+            </button>
+            <button onclick="navegar('filmes.html')">
+            <img src="images/filmes.svg" class="img3">
+            </button>
+        </aside>
+    </header>
+    <div class="body">
+        <div class="music">
+            <div class="music-1">
+                <button class="estilo" onclick="mpop()">pop</button>
+                <button class="estilo" onclick="mrock()">rock</button>
+                <button class="estilo" onclick="mindie()">indie</button>
+                <button class="estilo" onclick="mmpb()">MPB</button>
+            </div>
+            <div class="music-2">
+                <button class="estilo" onclick="mrap()">rap</button>
+                <button class="estilo" onclick="mjazz()">jazz</button>
+                <button class="estilo" onclick="meletronica()">eletrônica</button>
+                <button class="estilo" onclick="msamba()">samba</button>
+            </div>
+        </div>
+            <section>
+                <h2>sugestões</h2>
+                <div class="music-sugestion" id="msc">Clique nos botões para mostrar recomendações de músicas</div>
+            </section>
+        </div>    
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="funcoes.js"></script>
+    <script src="conselhos.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="titulo-pag">CONSELHOS</h1>
+        </div>
+        <aside>
+            <button onclick="navegar('index.html')">
+                <img src="images/home.svg" class="img1">
+            </button>
+            <button onclick="navegar('musicas.html')">
+                <img src="images/musicas.svg" class="img2">
+            </button>
+            <button onclick="navegar('filmes.html')">
+                <img src="images/filmes.svg" class="img3">
+            </button>
+        </aside>
+    </header>
+    <div class="body">
+    <section class="conteudo">  
+    <div id="chat" class="chat"></div>
+    <br>
+    <button onclick="escreva()" class="send">Receber conselhos</button>
+</section>  
+<section class="conteudo2">
+    <img src="images/undraw_team_up_re_84ok.svg" class="img">
+</section>
+</div>
+<script>
+    var chat = document.getElementById("chat");
+
+    const conselhos = [  "Viva intensamente, não sabemos quanto tempo temos então faça valer a pena!",
+                     "Tempo é o nosso bem mais precioso, e temos pouco, desperdiçar não é uma opção!",
+                     "Existem amigos mais chegados que irmãos, ou melhor, amigos são a familia que escolhemos, portanto zele por quem te quer bem!",
+                     "A familia é composta pelos os que te amam incondicionalmente e provavelmente estarão ao seu lado nos momentos de crise, os guarde e trate com o devido respeito e amor!",];
+
+function escreva() {
+    chat.innerHTML = " ";
+
+    chat.innerHTML = conselhos[Math.floor(Math.random()* conselhos.length)];
+}
+</script>
+</body>
+</html>

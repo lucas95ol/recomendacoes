@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <script tipe="module" src="funcoes.js"></script>
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1 class="titulo-pag">FILMES</h1>
+        </div>
+        <aside>
+            <button onclick="navegar('index.html')">
+            <img src="images/home.svg" class="img1">
+            </button>
+            <button onclick="navegar('conselhos.html')">
+            <img src="images/mensagem.svg" class="img4">
+            </button>
+            <button onclick="navegar('musicas.html')">
+            <img src="images/musicas.svg" class="img2">
+            </button>
+        </aside>
+    </header>
+    <div class="body">
+    <div class="genero">
+        <h2>Ação</h2>
+        <p>Para quem gosta mais de batalhas, juntamente com muito caos</p>
+        <br>
+        <div class="alternativas">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/jonhwickAcao.jpg" alt="john wick">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/panteranegraAcao.jpg" alt="pantera negra">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/batmanAcao.jpg" alt="batman">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="genero">
+        <h2>Animação</h2>
+        <p>Excelente para apreciadores de diferentes estilos de artes na hora de se contar uma história</p>
+        <div class="alternativas">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/aranhaversoAnimacao.jpg" alt="aranhavero">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/carrosAnimacao.jpg" alt="carros">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/walleAnimacao.jpg" alt="wall-e">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="genero">
+        <h2>Drama</h2>
+        <p>Se prefere dilemas profundos de personagens com quem pode se identificar</p>
+        <div class="alternativas">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/mulherreiDrama.jpg" alt="mulher rei">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/novonofrontDrama.jpg" alt="nada de novo no front">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/intocaveisDrama.jpg" alt="intocaveis">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div class="genero">
+        <h2>Ficção</h2>
+        <p>Que tal ver novos mundos, seres ou realidades incriveis? </p>
+        <div class="alternativas">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="./images/transformersFiccao.jpg" alt="transformers">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/jurassicparkFiccao.jpg" alt="jurassic park">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="./images/interestelarFiccao.jpg" alt="interestelar">
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
